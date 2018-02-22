@@ -474,7 +474,7 @@ function doRegister(serviceDef,callback){
 
 function doDeregister(uuid,callback){
     var query = {
-        "method":"GET",
+        "method":"PUT",
         "url": _consulAgent + "/v1/agent/service/deregister/" + uuid,
     };
 
